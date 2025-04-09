@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  count: number = 0;
+  showNumber: string;
+
+  constructor() {
+    this.showNumber = '00';
+  }
 
 }
