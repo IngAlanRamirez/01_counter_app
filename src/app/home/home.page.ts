@@ -15,4 +15,16 @@ export class HomePage {
     this.showNumber = '00';
   }
 
+  up() {
+    this.count++;
+    this.showNumber = this.count.toString().padStart(2, '0');
+  }
+
+  down() {
+    if (this.count > 0) {
+      this.count--;
+      this.showNumber = this.count.toString().padStart(2, '0');
+    }
+  }
+
 }
